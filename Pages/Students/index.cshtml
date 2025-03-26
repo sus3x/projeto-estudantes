@@ -1,0 +1,27 @@
+@page
+@model FiliTest.Pages.Students.IndexModel
+
+<h2>Lista de Estudantes</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+        <tr>
+            <td>@student.Nome</td>
+            <td>@student.Email</td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@student.Id">Editar</a>
+                <a asp-page="./Delete" asp-route-id="@student.Id">Excluir</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<a asp-page="Create">Adicionar Novo</a>

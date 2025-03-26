@@ -1,0 +1,14 @@
+@page
+@model FiliTest.Pages.Students.CreateModel
+
+<h2>Adicionar Estudante</h2>
+
+<form method="post">
+    <label for="Nome">Nome:</label>
+    <input type="text" asp-for="Student.Nome" />
+
+    <label for="Email">Email:</label>
+    <input type="email" asp-for="Student.Email" />
+
+    <button type="submit">Salvar</button>
+</form>
