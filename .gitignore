@@ -1,0 +1,18 @@
+# Ignore Visual Studio files
+.vs/
+*.vspscc
+*.vssscc
+
+# Ignore arquivos gerados automaticamente
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore pastas do sistema
+Thumbs.db
+ehthumbs.db
+
+# Ignorar a pasta bin e obj de compilação
+bin/
+obj/
